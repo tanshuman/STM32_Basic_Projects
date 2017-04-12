@@ -1,0 +1,4 @@
+Edited stm32f4xx.h, line 139
+#define HSE_VALUE    ((uint32_t)8000000) /*!< Value of the External oscillator in Hz */
+
+https://my.st.com/public/STe2ecommunities/mcu/Lists/STM32Discovery/Flat.aspx?RootFolder=https%3a%2f%2fmy%2est%2ecom%2fpublic%2fSTe2ecommunities%2fmcu%2fLists%2fSTM32Discovery%2fUSART%20example%20code%20for%20Nucleo%20F401RE&FolderCTID=0x01200200770978C69A1141439FE559EB459D75800084C20D8867EAD444A5987D47BE638E0F&currentviews=3243

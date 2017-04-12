@@ -1,0 +1,273 @@
+###############################################################################
+#
+# IAR ELF Linker V7.60.2.11341/W32 for ARM                18/Oct/2016  20:26:51
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\Debug\Exe\UART_TX.out
+#    Map file     =  
+#        C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\Debug\List\UART_TX.map
+#    Command line =  
+#        "C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\Debug\Obj\main.o"
+#        "C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\Debug\Obj\misc.o"
+#        "C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\Debug\Obj\startup_stm32f401xx.o"
+#        "C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\Debug\Obj\stm32f4xx_gpio.o"
+#        "C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\Debug\Obj\stm32f4xx_rcc.o"
+#        "C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\Debug\Obj\stm32f4xx_usart.o"
+#        "C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\Debug\Obj\system_stm32f4xx.o" -o
+#        "C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\Debug\Exe\UART_TX.out" --redirect
+#        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
+#        "C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\Debug\List\UART_TX.map" --config
+#        "C:\Users\masta\Documents\IAR
+#        Workbench\Projects\5_UART_TX\EWARM\settings\stm32f4xx_flash.icf"
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x081fffff] { ro };
+"P2":  place in [from 0x20000000 to 0x2002ffff] { rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address   Size  Object
+  -------            ----        -------   ----  ------
+"A1":                                     0x194
+  .intvec            ro code  0x08000000  0x194  startup_stm32f401xx.o [1]
+                            - 0x08000194  0x194
+
+"P1":                                     0x7a4
+  .text              ro code  0x08000194  0x140  system_stm32f4xx.o [1]
+  .text              ro code  0x080002d4  0x138  main.o [1]
+  .text              ro code  0x0800040c  0x134  stm32f4xx_rcc.o [1]
+  .text              ro code  0x08000540   0xf4  stm32f4xx_gpio.o [1]
+  .text              ro code  0x08000634  0x10a  stm32f4xx_usart.o [1]
+  .text              ro code  0x0800073e   0x2c  copy_init3.o [4]
+  .text              ro code  0x0800076c   0x28  data_init.o [4]
+  .iar.init_table    const    0x08000794   0x14  - Linker created -
+  .rodata            const    0x080007a8   0x1c  main.o [1]
+  .text              ro code  0x080007c4   0x1a  cmain.o [4]
+  .text              ro code  0x080007de    0x4  low_level_init.o [3]
+  .text              ro code  0x080007e2    0x4  exit.o [3]
+  .text              ro code  0x080007e8    0xa  cexit.o [4]
+  .text              ro code  0x080007f4   0x14  exit.o [5]
+  .text              ro code  0x08000808   0x10  startup_stm32f401xx.o [1]
+  Initializer bytes  const    0x08000818   0x10  <for P2-1>
+  .text              ro code  0x08000828    0xc  cstartup_M.o [4]
+  .text              ro code  0x08000834    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000838    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x0800083c    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000840    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000844    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000848    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x0800084c    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000850    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000854    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000858    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x0800085c    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000860    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000864    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000868    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x0800086c    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000870    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000874    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000878    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x0800087c    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000880    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000884    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000888    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x0800088c    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000890    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000894    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000898    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x0800089c    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008a0    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008a4    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008a8    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008ac    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008b0    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008b4    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008b8    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008bc    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008c0    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008c4    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008c8    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008cc    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008d0    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008d4    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008d8    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008dc    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008e0    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008e4    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008e8    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008ec    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008f0    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008f4    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008f8    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x080008fc    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000900    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000904    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000908    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x0800090c    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000910    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000914    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000918    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x0800091c    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000920    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000924    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000928    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x0800092c    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000930    0x4  startup_stm32f401xx.o [1]
+  .text              ro code  0x08000934    0x4  startup_stm32f401xx.o [1]
+  .rodata            const    0x08000938    0x0  copy_init3.o [4]
+                            - 0x08000938  0x7a4
+
+"P2", part 1 of 2:                         0x10
+  P2-1                        0x20000000   0x10  <Init block>
+    .data            inited   0x20000000   0x10  stm32f4xx_rcc.o [1]
+                            - 0x20000010   0x10
+
+"P2", part 2 of 2:                        0x400
+  CSTACK                      0x20000010  0x400  <Block>
+    CSTACK           uninit   0x20000010  0x400  <Block tail>
+                            - 0x20000410  0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x10:
+          0x08000818  0x10
+    1 destination range, total size 0x10:
+          0x20000000  0x10
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+C:\Users\masta\Documents\IAR Workbench\Projects\5_UART_TX\EWARM\Debug\Obj: [1]
+    main.o                     312       28
+    startup_stm32f401xx.o      680
+    stm32f4xx_gpio.o           244
+    stm32f4xx_rcc.o            308       16       16
+    stm32f4xx_usart.o          266
+    system_stm32f4xx.o         320
+    ------------------------------------------------
+    Total:                   2 130       44       16
+
+command line: [2]
+    ------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                       4
+    low_level_init.o             4
+    ------------------------------------------------
+    Total:                       8
+
+rt7M_tl.a: [4]
+    cexit.o                     10
+    cmain.o                     26
+    copy_init3.o                44
+    cstartup_M.o                12
+    data_init.o                 40
+    ------------------------------------------------
+    Total:                     132
+
+shb_l.a: [5]
+    exit.o                      20
+    ------------------------------------------------
+    Total:                      20
+
+    Gaps                         6
+    Linker created                       20    1 024
+----------------------------------------------------
+    Grand Total:             2 296       64    1 040
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address  Size  Type      Object
+-----                      -------  ----  ----      ------
+.iar.init_table$$Base   0x08000794         --   Gb  - Linker created -
+.iar.init_table$$Limit  0x080007a8         --   Gb  - Linker created -
+?main                   0x080007c5        Code  Gb  cmain.o [4]
+APBAHBPrescTable        0x20000000  0x10  Data  Lc  stm32f4xx_rcc.o [1]
+CSTACK$$Base            0x20000010         --   Gb  - Linker created -
+CSTACK$$Limit           0x20000410         --   Gb  - Linker created -
+GPIO_Configuration      0x080002eb  0x62  Code  Gb  main.o [1]
+GPIO_Init               0x08000541  0xa4  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_PinAFConfig        0x080005e5  0x50  Code  Gb  stm32f4xx_gpio.o [1]
+OutString               0x08000389  0x26  Code  Gb  main.o [1]
+RCC_AHB1PeriphClockCmd  0x080004e5  0x20  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x08000505  0x20  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_Configuration       0x080002d5  0x16  Code  Gb  main.o [1]
+RCC_GetClocksFreq       0x0800040d  0xd8  Code  Gb  stm32f4xx_rcc.o [1]
+Region$$Table$$Base     0x08000794         --   Gb  - Linker created -
+Region$$Table$$Limit    0x080007a8         --   Gb  - Linker created -
+SetSysClock             0x080001db  0xca  Code  Lc  system_stm32f4xx.o [1]
+SystemInit              0x08000195  0x46  Code  Gb  system_stm32f4xx.o [1]
+USART2_Configuration    0x0800034d  0x3c  Code  Gb  main.o [1]
+USART_Cmd               0x080006f9  0x1c  Code  Gb  stm32f4xx_usart.o [1]
+USART_GetFlagStatus     0x08000725  0x1a  Code  Gb  stm32f4xx_usart.o [1]
+USART_Init              0x08000635  0xb6  Code  Gb  stm32f4xx_usart.o [1]
+USART_ReceiveData       0x0800071d   0x8  Code  Gb  stm32f4xx_usart.o [1]
+USART_SendData          0x08000715   0x8  Code  Gb  stm32f4xx_usart.o [1]
+__cmain                 0x080007c5        Code  Gb  cmain.o [4]
+__exit                  0x080007f5  0x14  Code  Gb  exit.o [5]
+__iar_copy_init3        0x0800073f  0x2c  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x0800076d  0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x08000829        Code  Gb  cstartup_M.o [4]
+__low_level_init        0x080007df   0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000        Data  Gb  startup_stm32f401xx.o [1]
+_call_main              0x080007d1        Code  Gb  cmain.o [4]
+_exit                   0x080007e9        Code  Gb  cexit.o [4]
+_main                   0x080007db        Code  Gb  cmain.o [4]
+exit                    0x080007e3   0x4  Code  Gb  exit.o [3]
+main                    0x080003af  0x4c  Code  Gb  main.o [1]
+
+
+[1] = C:\Users\masta\Documents\IAR Workbench\Projects\5_UART_TX\EWARM\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  2 296 bytes of readonly  code memory
+     64 bytes of readonly  data memory
+  1 040 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
